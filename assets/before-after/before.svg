@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#2f2f2f"/>
+  <text x="50%" y="45%" text-anchor="middle" fill="#d4a017" font-family="Playfair Display, serif" font-size="72">Before</text>
+  <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="28">Original look</text>
+</svg>

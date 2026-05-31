@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Enchanted Lumos — Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="logo">Enchanted Lumos</div>
+      <a class="cta" href="#contact">Book a Session</a>
+    </nav>
+    <section class="hero">
+      <h1>Enchanted Lumos</h1>
+      <p class="tagline">Capturing the golden moments — portrait, wedding & life</p>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="about">
+      <div class="about-inner">
+        <h2>About</h2>
+        <p>Enchanted Lumos crafts moody, elegant imagery with warm golden highlights and timeless composition. Specializing in portrait, wedding, and lifestyle photography — we celebrate candid emotion and refined aesthetics.</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+      <h2>Photo Samples</h2>
+      <div class="gallery-scroll" tabindex="0">
+        <figure><img src="assets/portrait/portrait.svg" alt="Portrait sample"></figure>
+        <figure><img src="assets/portrait/portrait-2.svg" alt="Portrait sample"></figure>
+        <figure><img src="assets/wedding/wedding.svg" alt="Wedding sample"></figure>
+        <figure><img src="assets/wedding/wedding-2.svg" alt="Wedding sample"></figure>
+        <figure><img src="assets/events/events.svg" alt="Events sample"></figure>
+        <figure><img src="assets/events/events-2.svg" alt="Events sample"></figure>
+        <figure><img src="assets/street/street.svg" alt="Street sample"></figure>
+        <figure><img src="assets/street/street-2.svg" alt="Street sample"></figure>
+        <figure><img src="assets/family/family.svg" alt="Family sample"></figure>
+        <figure><img src="assets/family/family-2.svg" alt="Family sample"></figure>
+        <figure><img src="assets/pregnancy/pregnancy.svg" alt="Pregnancy sample"></figure>
+        <figure><img src="assets/pregnancy/pregnancy-2.svg" alt="Pregnancy sample"></figure>
+      </div>
+    </section>
+
+    <section id="before-after" class="before-after">
+      <h2>Before / After</h2>
+      <div class="ba-wrap" aria-label="Before and after image comparison">
+        <div class="ba-after" style="background-image:url('assets/before-after/after.svg')"></div>
+        <div class="ba-before" style="background-image:url('assets/before-after/before.svg')"></div>
+        <div class="ba-handle" role="slider" tabindex="0" aria-label="Before/After slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></div>
+        <span class="ba-label ba-label-before">Before</span>
+        <span class="ba-label ba-label-after">After</span>
+      </div>
+      <p class="muted">Drag or click the slider to reveal the edit. Focus the handle and use ← → keys.</p>
+      <div id="baStatus" class="sr-only" aria-live="polite"></div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Services</h2>
+      <div class="services-grid">
+        <div class="service">Portrait Photography</div>
+        <div class="service">Wedding Photography</div>
+        <div class="service">Events Photography</div>
+        <div class="service">Street Photography</div>
+        <div class="service">Family Photography</div>
+        <div class="service">Pregnancy Photography</div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <form id="contactForm" class="contact-form">
+        <div class="row">
+          <label>Full name<input name="name" type="text" required></label>
+          <label>Email<input name="email" type="email" required></label>
+        </div>
+        <label>Subject<input name="subject" type="text"></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <div id="formMsg" class="form-msg" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> Enchanted Lumos — All rights reserved.</div>
+    <div class="socials">Follow: <a href="#">Instagram</a> · <a href="#">Behance</a></div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
