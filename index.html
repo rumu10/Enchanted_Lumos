@@ -17,15 +17,22 @@
       <div class="logo">Enchanted Lumos</div>
       <a class="cta" href="#contact">Book a Session</a>
     </nav>
-    <section class="hero">
-      <h1>Enchanted Lumos</h1>
-    <p class="tagline">Capturing the soft moments — portrait, wedding & life</p>
+    <section class="hero hero-animated">
+      <div class="hero-content">
+        <h1>Enchanted Lumos</h1>
+        <div class="tagline-wrap">
+          <div class="tagline-ornament" aria-hidden="true">✦</div>
+          <p class="tagline">Capturing the soft moments — portrait, wedding & life</p>
+          <div class="tagline-line" aria-hidden="true"></div>
+          </div>
+          </div>
     </section>
   </header>
 
   <main>
     <section id="about" class="about">
       <div class="about-inner">
+        <div class="about-flourish" aria-hidden="true">✦</div>
         <h2>About</h2>
         <p>Enchanted Lumos crafts moody, elegant imagery with soft blush tones and timeless composition. Specializing in
             portrait, wedding, and lifestyle photography — we celebrate candid emotion and refined aesthetics.</p>
@@ -35,27 +42,31 @@
     <section id="gallery" class="gallery-section">
       <h2>Photo Samples</h2>
       <div class="gallery-scroll" tabindex="0">
-        <figure><img src="assets/portrait/portrait.svg" alt="Portrait sample"></figure>
-        <figure><img src="assets/portrait/portrait-2.svg" alt="Portrait sample"></figure>
-        <figure><img src="assets/wedding/wedding.svg" alt="Wedding sample"></figure>
-        <figure><img src="assets/wedding/wedding-2.svg" alt="Wedding sample"></figure>
-        <figure><img src="assets/events/events.svg" alt="Events sample"></figure>
-        <figure><img src="assets/events/events-2.svg" alt="Events sample"></figure>
-        <figure><img src="assets/street/street.svg" alt="Street sample"></figure>
+        <!-- <figure><img src="assets/portrait/portrait.svg" alt="Portrait sample"></figure> -->
+        <figure><img src="assets/portrait/p3.jpg" alt="Portrait sample"></figure>
+        <figure><img src="assets/portrait/p2.jpg" alt="Portrait sample P1"></figure>
+        <!-- <figure><img src="assets/wedding/wedding.svg" alt="Wedding sample"></figure>
+                        <figure><img src="assets/wedding/wedding-2.svg" alt="Wedding sample"></figure> -->
+        <figure><img src="assets/pregnancy/p1.jpg" alt="Pregnancy sample p1"></figure>
+        <figure><img src="assets/pregnancy/p2.jpg" alt="Pregnancy sample p2"></figure>
+        <figure><img src="assets/wedding/w1.jpg" alt="Wedding sample w1"></figure>
+        <figure><img src="assets/wedding/w2.jpg" alt="Wedding sample w2"></figure>
+        <figure><img src="assets/events/e1.jpg" alt="Events sample e1"></figure>
+        <figure><img src="assets/events/e2.jpg" alt="Events sample e2"></figure>
+        <!-- <figure><img src="assets/street/street.svg" alt="Street sample"></figure>
         <figure><img src="assets/street/street-2.svg" alt="Street sample"></figure>
         <figure><img src="assets/family/family.svg" alt="Family sample"></figure>
-        <figure><img src="assets/family/family-2.svg" alt="Family sample"></figure>
-        <figure><img src="assets/pregnancy/pregnancy.svg" alt="Pregnancy sample"></figure>
-        <figure><img src="assets/pregnancy/pregnancy-2.svg" alt="Pregnancy sample"></figure>
+        <figure><img src="assets/family/family-2.svg" alt="Family sample"></figure> -->
       </div>
     </section>
 
     <section id="before-after" class="before-after">
-      <h2>Before / After</h2>
+      <h2>Before / After Editing</h2>
       <div class="ba-wrap" aria-label="Before and after image comparison">
-        <div class="ba-after" style="background-image:url('assets/before-after/after.svg')"></div>
-        <div class="ba-before" style="background-image:url('assets/before-after/before.svg')"></div>
-        <div class="ba-handle" role="slider" tabindex="0" aria-label="Before/After slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></div>
+        <div class="ba-after" style="background-image:url('assets/before-after/After.jpg')"></div>
+        <div class="ba-before" style="background-image:url('assets/before-after/Before.JPG')"></div>
+        <div class="ba-handle" role="slider" tabindex="0" aria-label="Before/After slider" aria-valuemin="0" aria-valuemax="100"
+          ariavaluenow="50"><span></span></div>
         <span class="ba-label ba-label-before">Before</span>
         <span class="ba-label ba-label-after">After</span>
       </div>
@@ -91,6 +102,14 @@
       </form>
     </section>
   </main>
+
+  <!-- Lightbox modal -->
+  <div id="photoModal" class="photo-modal">
+    <div class="photo-modal-content">
+      <button class="photo-modal-close" aria-label="Close modal">✕</button>
+      <img id="photoModalImg" src="" alt="Expanded photo">
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div>© <span id="year"></span> Enchanted Lumos — All rights reserved.</div>

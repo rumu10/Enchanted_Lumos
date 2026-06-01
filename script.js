@@ -53,4 +53,27 @@ document.addEventListener('DOMContentLoaded',()=>{
       if(e.key==='ArrowLeft') gallery.scrollBy({left:-300,behavior:'smooth'});
     });
   }
+
+    // Lightbox: click to expand photo
+    const modal = document.getElementById('photoModal');
+    const modalImg = document.getElementById('photoModalImg');
+    const modalClose = document.querySelector('.photo-modal-close');
+    if (modal && modalImg && modalClose) {
+        const imgs = document.querySelectorAll('.gallery-scroll img');
+        imgs.forEach(img => {
+            img.addEventListener('click', e => {
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+                modal.classList.add('active');
+            });
+        });
+        const closeModal = () => modal.classList.remove('active');
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', e => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeModal();
+        });
+    }
 });
