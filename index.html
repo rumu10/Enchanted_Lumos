@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-title">Enchanted Lumos</div>
+    </div>
+  </div>
   <header class="site-header">
     <nav class="nav">
       <div class="logo">Enchanted Lumos</div>
@@ -42,21 +47,28 @@
     <section id="gallery" class="gallery-section">
       <h2>Photo Samples</h2>
       <div class="gallery-scroll" tabindex="0">
-        <!-- <figure><img src="assets/portrait/portrait.svg" alt="Portrait sample"></figure> -->
-        <figure><img src="assets/portrait/p3.jpg" alt="Portrait sample"></figure>
-        <figure><img src="assets/portrait/p2.jpg" alt="Portrait sample P1"></figure>
-        <!-- <figure><img src="assets/wedding/wedding.svg" alt="Wedding sample"></figure>
-                        <figure><img src="assets/wedding/wedding-2.svg" alt="Wedding sample"></figure> -->
-        <figure><img src="assets/pregnancy/p1.jpg" alt="Pregnancy sample p1"></figure>
-        <figure><img src="assets/pregnancy/p2.jpg" alt="Pregnancy sample p2"></figure>
-        <figure><img src="assets/wedding/w1.jpg" alt="Wedding sample w1"></figure>
-        <figure><img src="assets/wedding/w2.jpg" alt="Wedding sample w2"></figure>
-        <figure><img src="assets/events/e1.jpg" alt="Events sample e1"></figure>
-        <figure><img src="assets/events/e2.jpg" alt="Events sample e2"></figure>
-        <!-- <figure><img src="assets/street/street.svg" alt="Street sample"></figure>
-        <figure><img src="assets/street/street-2.svg" alt="Street sample"></figure>
-        <figure><img src="assets/family/family.svg" alt="Family sample"></figure>
-        <figure><img src="assets/family/family-2.svg" alt="Family sample"></figure> -->
+        <!-- <figure><img loading="lazy" class="lazy-image" src="assets/portrait/portrait.svg" alt="Portrait sample"></figure> -->
+        <figure><img loading="eager" class="lazy-image" src="assets/portrait/p3.jpg" alt="Portrait sample"></figure>
+        <figure><img loading="lazy" class="lazy-image lazy-gallery" data-src="assets/portrait/p2.jpg"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Portrait sample P1"></figure>
+        <!-- <figure><img loading="lazy" class="lazy-image" src="assets/wedding/wedding.svg" alt="Wedding sample"></figure>
+                                <figure><img loading="lazy" class="lazy-image" src="assets/wedding/wedding-2.svg" alt="Wedding sample"></figure> -->
+        <figure><img loading="lazy" class="lazy-image lazy-gallery" data-src="assets/pregnancy/p1.jpg"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Pregnancy sample p1"></figure>
+        <figure><img loading="lazy" class="lazy-image lazy-gallery" data-src="assets/pregnancy/p2.jpg"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Pregnancy sample p2"></figure>
+        <figure><img loading="lazy" class="lazy-image lazy-gallery" data-src="assets/wedding/w1.jpg"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Wedding sample w1"></figure>
+        <figure><img loading="lazy" class="lazy-image lazy-gallery" data-src="assets/wedding/w2.jpg"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Wedding sample w2"></figure>
+        <figure><img loading="lazy" class="lazy-image lazy-gallery" data-src="assets/events/e1.jpg"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Events sample e1"></figure>
+        <figure><img loading="lazy" class="lazy-image lazy-gallery" data-src="assets/events/e2.jpg"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Events sample e2"></figure>
+        <!-- <figure><img loading="lazy" class="lazy-image" src="assets/street/street.svg" alt="Street sample"></figure>
+                <figure><img loading="lazy" class="lazy-image" src="assets/street/street-2.svg" alt="Street sample"></figure>
+                <figure><img loading="lazy" class="lazy-image" src="assets/family/family.svg" alt="Family sample"></figure>
+                <figure><img loading="lazy" class="lazy-image" src="assets/family/family-2.svg" alt="Family sample"></figure> -->
       </div>
     </section>
 
@@ -137,7 +149,7 @@
   <div id="photoModal" class="photo-modal">
     <div class="photo-modal-content">
       <button class="photo-modal-close" aria-label="Close modal">✕</button>
-      <img id="photoModalImg" src="" alt="Expanded photo">
+      <img id="photoModalImg" loading="lazy" src="" alt="Expanded photo">
     </div>
   </div>
 

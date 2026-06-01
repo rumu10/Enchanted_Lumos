@@ -203,6 +203,49 @@ h2 {
     transform: scale(1.08);
 }
 
+img.lazy-image {
+    opacity: 0;
+    transition: opacity .45s ease, filter .45s ease;
+    background: #09090a;
+}
+
+.gallery-scroll img.lazy-image {
+    min-height: 220px;
+}
+
+img.lazy-image.loaded {
+    opacity: 1;
+}
+
+.preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #050506;
+    color: var(--soft);
+    transition: opacity .45s ease, visibility .45s ease;
+}
+
+.preloader-content {
+    text-align: center;
+}
+
+.preloader-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+body.page-ready .preloader {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 /* Lightbox modal for expanded photos */
 .photo-modal {
     display: none;
